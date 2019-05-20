@@ -1,1 +1,5 @@
-print("Hello world")
+def boi [
+    print "sth"
+]
+
+boi()
