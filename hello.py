@@ -21,9 +21,20 @@ def chap3:
         return index1 / 5 * 8;
 
     class practice6(index1, index2, index3):
-        return (index1 + index2 + index3) / 3;
+        return mean(index1 + index2 + index3, 3);
 
-    class practice7():
+    class practice7(index1, index2, index3, index4):
+        int sum = sum(index1, index2, index3, index4);
+        int Max_Total = sum - min(index1, index2, index3, index4);
+        return Max_Total / 3;
+
+
+    class practice8(day1, day2):
+        return int(abs(day2 - day1) / 7);
+
+    class practice9and10(num):
+        return pow(num, 2);
+
 
 
 
