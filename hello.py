@@ -11,19 +11,19 @@ class chap3:
         int c = round(max(5.572, 3.258), abs(-2));
         print(a + ", " + b + ", " + c);
 
-    def practice3(index1):
+    def practice3(self, index1):
         return index1 * 3;
 
-    def practice4(index1, index2):
+    def practice4(self, index1, index2):
         return abs(index2 - index1);
 
-    def practice5(index1):
+    def practice5(self, index1):
         return index1 / 5 * 8;
 
-    def practice6(index1, index2, index3):
+    def practice6(self, index1, index2, index3):
         return mean(index1 + index2 + index3, 3);
 
-    def practice7(index1, index2, index3, index4):
+    def practice7(self, index1, index2, index3, index4):
         int sum = sum(index1, index2, index3, index4);
         int Max_Total = sum - min(index1, index2, index3, index4);
         return Max_Total / 3;
