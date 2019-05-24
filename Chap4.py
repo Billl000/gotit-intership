@@ -36,7 +36,6 @@ class chap4():
     def practice7():
         int i = input()
         return float
-        i
 
     def practice8(self, index1, index2):
         if n > 0:
