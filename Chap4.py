@@ -43,6 +43,7 @@ class chap4():
                 print(index1)
         else :
             return ""
+
     def practice9(self, s1, s2):
         return sum(len(s1) + len(s2))
 
