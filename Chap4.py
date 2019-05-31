@@ -34,7 +34,7 @@ class chap4():
         print(y + " * " + 3 + " is " + (y * x))
 
     def practice7():
-        int i = input()
+        i = input()
         return float
 
     def practice8(self, index1, index2):
