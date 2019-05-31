@@ -59,7 +59,7 @@ class chap11:
         for item in values:
             duplicates = duplicates + 1
             values.remove(item)
-x
+
         return duplicates
 
     def practice7(self, color_dict):
