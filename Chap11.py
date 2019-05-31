@@ -75,7 +75,7 @@ class chap11:
                 intersection[key] = value
         return intersection
 
-    def practice9(self):
+    def practice9(self, dict_of_dict):
         inner_keys = set()
         for key in dict_of_dict:
             for inner_key in dict_of_dict[key]:
@@ -83,7 +83,7 @@ class chap11:
         
         return inner_keys
         
-    def practice10(self):
+    def practice10(self, dict_of_dict):
         inner_keys_list = []
         inner_keys = list(dict_of_dict[key].keys())
         inner_keys.sort()
@@ -97,7 +97,7 @@ class chap11:
                 return False
 
         return True
-    def practice11a():
+    def practice11a(self, vector1, vector2):
         sum_vector = vector1.copy()
         for key in vector2:
             if key in sum_vector:
@@ -106,7 +106,7 @@ class chap11:
                 sum_vector[key] = vector2[key]
         return sum_vector
 
-    def practice11b():
+    def practice11b(self, vector1, vector2):
         dot = 0
         for key1 in vector1:
             if key1 in vector2:
