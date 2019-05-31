@@ -1,12 +1,14 @@
 class chap11:
+    @property
     def practice1(self):
-        find_dups = set()
+        repeat = 1
+        find_dups = []
         dups = set()
         index = input("How many numbers would you like to add?")
         print("Enter your number: ")
         for i in range(index):
             num = input()
-            find_dups.add(num)
+            find_dups.append(num)
 
         for x in range(index):
             for y in range(index-1):
@@ -63,6 +65,7 @@ class chap11:
         return duplicates
 
     def practice7(self, color_dict):
+        sum = 0
         for i in color_dict:
             sum = color_dict[i] + sum
 
@@ -85,9 +88,10 @@ class chap11:
         
     def practice10(self, dict_of_dict):
         inner_keys_list = []
-        inner_keys = list(dict_of_dict[key].keys())
-        inner_keys.sort()
-        inner_keys_list.append(inner_keys)
+        for key in dict_of_dict:
+            inner_keys = list(dict_of_dict[key].keys())
+            inner_keys.sort()
+            inner_keys_list.append(inner_keys)
         for i in range(1, len(inner_keys_list)):
             if len(inner_keys_list[0]) != len(inner_keys_list[i]):
                 return False
@@ -114,12 +118,22 @@ class chap11:
         return dot
 
 
+chapter = chap11()
 
-        
+print("Prac 1: %s" % chapter.practice1)
+print("Prac 2: %s" % chapter.practice2({'Anne', 'Beatrice', 'Cari'}, {'Ali', 'Bob', 'Chen'}))
+print("Prac 3: %s" % chapter.practice3("ex3_data.edb"))
+print("Prac 4: %s" % chapter.practice4({'red': 1, 'green': 1, 'blue': 2}))
+print("Prac 5: %s" % chapter.practice5({'neutron': 0.55, 'proton': 0.21, 'meson': 0.03, 'muon': 0.07}))
+print("Prac 6: %s" % chapter.practice6({'R': 1, 'G': 2, 'B': 2, 'Y': 1, 'P': 3}))
+print("Prac 7: %s" % chapter.practice7({'R': 0.5, 'G': 0.4, 'B': 0.7}))
+print("Prac 8: %s" % chapter.practice8({'a': 1, 'b': 2, 'c': 3}, {'a': 1, 'd': 2, 'b': 2}))
+print("Prac 9: %s" % chapter.practice9({'A': {1: 'a', 2: 'b'}, 'B': {2: 'c', 3: 'd'}}))
+print("Prac 10: %s" % chapter.practice10({'A': {1: 'a', 2: 'b'}, 'B': {2: 'c', 3: 'd'}}))
+print("Prac 11: %s" % chapter.practice11a({1: 3, 3: 4}, {2: 4, 3: 5,5: 6}))
+print("Prac 11: %s" % chapter.practice11b({1: 3, 3: 4}, {2: 4, 3: 5, 5: 6}))
 
 
 
 
 
-
-print (chap11().practice3('ex3_data.edb'))
