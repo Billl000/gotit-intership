@@ -49,5 +49,14 @@ class chap8:
         print(units[1][0])
         print(units[0][1:])
         print(units[1][0:2])
-        
 
+chap = chap8()
+print("Prac 1 : %s" % chap.practice1())
+print("Prac 2 : %s" % chap.practice2())
+print("Prac 3 : %s" % chap.practice3())
+print("Prac 4 : %s" % chap.practice4())
+print("Prac 5 : %s" % chap.practice5())
+print("Prac 6 : %s" % chap.practice6())
+print("Prac 7 : %s" % chap.practice7([8, 8, 7, 8, 7, 8]))
+print("Prac 8 : %s" % chap.practice8([5, 6, 3, 6], [4, 7, 2]))
+print("Prac 10 : %s" % chap.practice10())

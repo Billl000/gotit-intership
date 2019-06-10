@@ -15,3 +15,8 @@ class Chap6:
 
     def practice3(self, num1, num2):
         return (num1 + num2) / 2
+
+chap = Chap6()
+print("Practice 1: %s" %chap.practice1())
+print("Practice 2: %s" %chap.practice2())
+print("Practice 3: %s" %chap.practice3(6 , 8))

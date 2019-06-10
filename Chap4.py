@@ -46,5 +46,13 @@ class chap4():
     def practice9(self, s1, s2):
         return sum(len(s1) + len(s2))
 
-chap4().practice9("ASHO", "HASFO")
+challenge = chap4()
+print("Practice 1: %s" % challenge.practice1())
+print("Practice 2: %s" % challenge.practice2())
+print("Practice 3: %s" % challenge.practice3())
+print("Practice 4: %s" % challenge.practice4())
+print("Practice 5: %s" % challenge.practice5())
+print("Practice 7: %s" % challenge.practice7())
+print("Practice 8: %s" % challenge.practice8(4, 5))
+print("Practice 9: %s" % challenge.practice9('faid', 'kaow'))
 

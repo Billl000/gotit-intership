@@ -56,3 +56,18 @@ class chap7:
     def practice12(self, s1, s2, ch):
 
         return s1.count(ch) + s2.count(ch)
+
+chap = chap7()
+print("Practice 1: %s" %chap.practice1())
+print("Practice 2: %s" %chap.practice2())
+print("Practice 3: %s" %chap.practice3())
+print("Practice 4: %s" %chap.practice4())
+print("Practice 5: %s" %chap.practice5())
+print("Practice 6: %s" %chap.practice6())
+print("Practice 7: %s" %chap.practice7())
+print("Practice 8: %s" %chap.practice8())
+print("Practice 9: %s" %chap.practice9())
+print("Practice 10: %s" %chap.practice10())
+print("Practice 11: %s" %chap.practice11())
+print("Practice 12: %s" %chap.practice12("Abcdefg", "Hfgabnde", "a"))
+

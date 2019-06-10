@@ -48,5 +48,8 @@ class chap13:
             end = end - 1
 
 
-
-chap13().practice4SSort([6, 5, 4, 3, 7, 1, 2])
+chap = chap13()
+print("Prac 1 : %s" % chap.practice1([4, 5, 2, 5], 5))
+print("Prac 4S : %s" % chap.practice4SSort([5, 6, 2, 6, 8, 3]))
+print("Prac 4T : %s" % chap.practice4ISort([5, 6, 2, 6, 8, 3]))
+print("Prac 5b : %s" % chap.practice5b([6, 2, 4, 3]))

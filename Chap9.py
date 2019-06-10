@@ -121,3 +121,20 @@ class chap9:
         while rat_1_weight[week] / rat_2_weight[week] - 1 < .10:
             week += 1
             print(week)
+
+chap = chap9()
+print("Prac 1 : %s" % chap.practice1())
+print("Prac 2 : %s" % chap.practice2())
+print("Prac 3 : %s" % chap.practice3())
+print("Prac 4 : %s" % chap.practice4())
+print("Prac 6 : %s" % chap.practice6())
+print("Prac 7 : %s" % chap.practice7())
+print("Prac 8 : %s" % chap.practice8([6, 7, 8], [9, 9, 7]))
+print("Prac 9 : %s" % chap.practice9())
+print("Prac 10 : %s" % chap.practice10())
+print("Prac 11 : %s" % chap.practice11())
+print("Prac 12 : %s" % chap.practice12([-4, 5, -7, -9, 2 ]))
+print("Prac 13 : %s" % chap.practice13())
+print("Prac 14 : %s" % chap.practice14())
+print("Prac 15 : %s" % chap.practice15())
+print("Prac 16 : %s" % chap.practice16([7, 8, 12, 5], [6, 7, 23, 4]))
