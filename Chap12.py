@@ -80,4 +80,3 @@ print("Prac 2c : {}".format( chapter.practice2c([4, 3, 2, 4, 3, 6, 1, 5], True))
 #print("Prac 3b : %s" % chapter.practice3b())
 print("Prac 6 : %s" % chapter.practice6(['green', 'blue', 'red']))
 
- 

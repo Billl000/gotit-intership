@@ -26,23 +26,23 @@ class chap7:
         print('runner'.replace('n', 'b'))
 
     def practice7(self):
-        str s = ' yes   '
+        s = ' yes   '
         print(s.strip(' '))
 
     def practice8(self):
-        str fruit = 'pineapple'
+        fruit = 'pineapple'
         print(fruit.find('p', fruit.count('p')))
         print(fruit.count(fruit.upper().swapcase()))
         print(fruit.replace(fruit.swapcase(), fruit.lower()))
 
     def practice9(self):
-        str season = 'summer'
+        season = 'summer'
         print('I love '.join(season))
 
     def practice10(self):
-        int side1 = 3
-        int side2 = 4
-        int side3 = 5
+        side1 = 3
+        side2 = 4
+        side3 = 5
         print('The sides have length {0}, {1}, and {2}'.format(side1, side2, side3))
 
     def practice11(self):

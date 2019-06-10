@@ -37,7 +37,7 @@ class chap4():
         return float
 
     def practice8(self, index1, index2):
-        if n > 0:
+        if index2 > 0:
             for i in range(index2):
                 print(index1)
         else :
