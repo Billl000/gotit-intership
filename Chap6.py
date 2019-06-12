@@ -7,7 +7,7 @@ class Chap6:
         print(math.ceil(math.sin(34.5)))
 
     def practice2(self):
-        help(calendar.isleap())
+        help(calendar.isleap(2016))
         calendar.isleap(2016)
         dir(calendar)
         calendar.leapdays(2000, 2050)

@@ -17,10 +17,13 @@ class chap13:
     def practice4SSort(self, array):
         i = 0
         j = 1
+        x = 0
         while i != len(array):
             if array[i] < array[j]:
                 j = array[i]
-            array[i], array[j] = array[j], array[i]
+                x = array[i]
+                array[i]= array[j]
+                array[j] = x
             i = i + 1
 
         return array
@@ -39,6 +42,7 @@ class chap13:
         return array
 
     def practice5b(self, lst):
+        end = len(lst) - 1
         while end > 0:
             for i in range(0, end):
                 if lst[i] > lst[i + 1]:

@@ -22,15 +22,13 @@ class chap4():
         print len(a)
 
     def practice5(self):
-        int
         x = 3
-        int
         y = 12.5
-        print("The rabbit is " + x)
-        print("The rabbit is " + x + " years old")
-        print(y + " is average")
-        print(y + " * " + x)
-        print(y + " * " + 3 + " is " + (y * x))
+        print("The rabbit is " + str(x))
+        print("The rabbit is " + str(x) + " years old")
+        print(str(y) + " is average")
+        print(str(y) + " * " + str(x))
+        print(str(y) + " * " + "3" + " is " + str((y * x)))
 
     def practice7(self):
         i = input()

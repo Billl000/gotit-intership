@@ -11,7 +11,7 @@ class chap8:
     def practice3(self):
         appointments = ['9:00', '10:30', '14:00', '15:00', '15:30']
         print(appointments.append('16:30'))
-        print(appointments + '16:30')
+        print(appointments + list(('16:30')))
 
     def practice4(self):
         ids = ['4353', '2314', '2956', '3382', '9362', '3900']
@@ -52,7 +52,6 @@ class chap8:
 
 chap = chap8()
 print("Prac 1 : %s" % chap.practice1())
-print("Prac 2 : %s" % chap.practice2())
 print("Prac 3 : %s" % chap.practice3())
 print("Prac 4 : %s" % chap.practice4())
 print("Prac 5 : %s" % chap.practice5())

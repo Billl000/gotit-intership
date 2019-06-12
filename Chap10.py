@@ -13,12 +13,12 @@ class chap10:
         for line in open('alkaline_metals.txt'):
             alkaline_metals.append(line.strip().split(' '))
 
-    def practice4(self):
+    def practice4(self, reader):
         line = skip_header(reader).strip()
         print(line)
         print(reader.read())
 
-    def practice5(self):
+    def practice5(self, reader):
         line = time_series.skip_header(reader).strip()
         smallest = int(line)
         for line in reader:
@@ -33,7 +33,7 @@ class chap10:
             with open('hebron.txt', 'r') as input_file:
                 print(smallest_value_skip(input_file))
 
-    def practice6(self):
+    def practice6(self, reader):
         line = time_series.skip_header(reader).strip()
         smallest = int(line)
         for line in reader:
@@ -47,7 +47,7 @@ class chap10:
             with open('hebron.txt', 'r') as input_file:
                 print(smallest_value_skip(input_file))
 
-    def practice7(self):
+    def practice7(self, reader):
         line = reader.readline()
         if not line:
             return None
@@ -64,12 +64,16 @@ class chap10:
             elif not (line.startswith('CMNT') or line.isspace()):
                 key, num, atom_type, x, y, z = line.split()
                 if molecule == None:
-                molecule = []
-                molecule.append([atom_type, x, y, z])
+                    molecule = []
+                    molecule.append([atom_type, x, y, z])
 
         return molecule
 
-    def practice8(self):
+    def practice8(self, reader):
+        line = reader.readline()
+        if not line:
+            return None
+        key, name = line.split()
         molecule = [name]
         reading = True
         serial_number = 1

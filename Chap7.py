@@ -48,7 +48,7 @@ class chap7:
     def practice11(self):
         print('boolean'.capitalize())
         print('CO2 H2O'.find('2'))
-        print('CO2 H2O'.find('2', 'CO2 H2O'.find('2' + 1)))
+        print('CO2 H2O'.find('2', 'CO2 H2O'.find('2' + str(1    ))))
         print('Boolean'[0].islower())
         print('MoNDaY'.lower().capitalize())
         print('  Monday'.lstrip())
