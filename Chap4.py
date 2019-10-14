@@ -1,3 +1,5 @@
+from utils.display import display_chap_result
+
 class chap4():
     def practice1(self):
         print ('Computer' + 'Science')
@@ -19,7 +21,7 @@ class chap4():
 
     def practice4(self):
         a = ""
-        print len(a)
+        print(len(a))
 
     def practice5(self):
         x = 3
@@ -45,6 +47,10 @@ class chap4():
         return sum(len(s1) + len(s2))
 
 challenge = chap4()
+
+# display_chap_result("1", challenge.practice1())
+# display_chap_result("2", challenge.practice2())
+
 print("Practice 1: %s" % challenge.practice1())
 print("Practice 2: %s" % challenge.practice2())
 print("Practice 3: %s" % challenge.practice3())

@@ -1,6 +1,14 @@
 import time_series
 
+
 class chap10:
+    def  skip_header(self, reader):
+        line = reader.readline()
+        line = reader.readline()
+        while line.startswith('#'):
+            line = reader.readline()
+
+        return line
     def practice1(self):
         name = input("What is the name of the file?")
         bk_name = name + '.bak'
@@ -14,7 +22,7 @@ class chap10:
             alkaline_metals.append(line.strip().split(' '))
 
     def practice4(self, reader):
-        line = skip_header(reader).strip()
+        line =  skip_header(reader).strip()
         print(line)
         print(reader.read())
 
