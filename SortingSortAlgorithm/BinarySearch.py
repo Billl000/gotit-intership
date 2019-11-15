@@ -21,4 +21,22 @@ def SelectionSort(array):
   for i in range(len(array)):
     print("%d" % array[i])
 
+
+def insertionSort(a):
+  for i in a:
+    j = a.index(i)
+    while j > 0:
+      if a[j - 1] > a[j]:
+        a[j - 1], a[j] = a[j], a[j - 1]
+      else:
+        break
+      j = j - 1
+
+def mergeSort(array):
+
 binary_search(z)
+
+
+
+
+
